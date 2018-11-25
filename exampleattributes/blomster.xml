@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mike:blomster
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://mike.blomster.dk blomster.xsd"
+xmlns:mike="http://mike.blomster.dk">
+    <blomst>
+        <navn lang="se">solsikke</navn>
+        <højde enhed="cm">45</højde>
+        <stedsegrøn>false</stedsegrøn>
+    </blomst>
+    <blomst>
+        <navn lang="se">solsikke</navn>
+        <højde enhed="cm">45</højde>
+        <stedsegrøn>false</stedsegrøn>
+    </blomst>
+</mike:blomster>

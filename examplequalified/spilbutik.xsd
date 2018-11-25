@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        attributeFormDefault="unqualified"
+        elementFormDefault="qualified"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mynamespace"
+        xmlns="http://mynamespace">
+
+    <xs:element name="spilbutik" type="spilbutikType"/>
+
+  <xs:complexType name="spilbutikType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="spil" type="spilType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+    <xs:complexType name="NavnMedAttributes" >
+        <xs:simpleContent>
+            <xs:extension base="xs:string"/>
+        </xs:simpleContent>
+
+    </xs:complexType>
+
+    <xs:simpleType name="RestrictedNavn">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="4"/>
+            <xs:maxLength value="40"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+  <xs:complexType name="spilType">
+    <xs:sequence>
+      <xs:element name="navn">
+          <xs:complexType>
+              <xs:simpleContent>
+                  <xs:extension base="RestrictedNavn">
+                      <xs:attribute name="forkortelse"
+                                    type="xs:string"
+                                    use="required" />
+                      <xs:attribute name="sprog"
+                                    type="xs:string"
+                                    use="required" />
+                  </xs:extension>
+              </xs:simpleContent>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="score" type="xs:int"/>
+      <xs:element name="beskrivelse" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

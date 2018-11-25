@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT spilbutik (spil*)>
+<!ELEMENT spil (navn,score,beskrivelse,pris)>
+
+<!ELEMENT navn (#PCDATA)>
+<!ATTLIST navn forkortelse CDATA #REQUIRED>
+<!ATTLIST navn sprog (dk|en|se) #REQUIRED>
+
+<!ELEMENT beskrivelse (#PCDATA)>
+<!ELEMENT pris (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
+
+

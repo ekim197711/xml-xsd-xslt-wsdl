@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" version="2.0" href="spilbutik.xsl" ?>
+<!DOCTYPE spilbutik SYSTEM "spilbutik.dtd">
+<spilbutik>
+    <spil>
+        <navn forkortelse="pc" sprog="dk">Pacman</navn>
+        <score>3</score>
+        <beskrivelse><![CDATA[
+        Spis oste pas på spøg.<>
+        ]]></beskrivelse>
+        <pris>123</pris>
+    </spil>
+    <spil>
+        <navn forkortelse="si" sprog="dk">Space Invaders</navn>
+        <score>5</score>
+        <beskrivelse>Space shooter</beskrivelse>
+        <pris>123</pris>
+    </spil>
+    <spil>
+        <navn forkortelse="jon" sprog="dk">Jones in the fast lane</navn>
+        <score>3</score>
+        <beskrivelse>Game of life</beskrivelse>
+        <pris>123</pris>
+    </spil>
+</spilbutik>

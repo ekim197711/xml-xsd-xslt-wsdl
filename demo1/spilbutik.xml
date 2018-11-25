@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" version="2.0" href="spilbutik.xsl" ?>
+<spilbutik
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="spilbutik.xsd">
+    <spil>
+        <navn forkortelse="pc" sprog="dk">Pacman</navn>
+        <score>3</score>
+        <beskrivelse>Spis oste pas på spøg.</beskrivelse>
+    </spil>
+    <spil>
+        <navn forkortelse="si" sprog="dk">Space Invaders</navn>
+        <score>5</score>
+        <beskrivelse>Space shooter</beskrivelse>
+    </spil>
+    <spil>
+        <navn forkortelse="jon" sprog="dk">Jones in the fast lane</navn>
+        <score>3</score>
+        <beskrivelse>Game of life</beskrivelse>
+    </spil>
+</spilbutik>

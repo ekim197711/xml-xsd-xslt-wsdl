@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           attributeFormDefault="unqualified"
+           elementFormDefault="unqualified"
+           targetNamespace="http://mike.blomster.dk"
+           xmlns="http://mike.blomster.dk">
+    <xs:element name="blomster" type="blomsterType"></xs:element>
+
+    <xs:complexType name="blomsterType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="blomst" type="blomstType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="langType">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="se"></xs:enumeration>
+                <xs:enumeration value="de"></xs:enumeration>
+            </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="enhedType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="cm"></xs:enumeration>
+            <xs:enumeration value="m"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="navnType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="lang" use="required" type="langType"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="højdeType">
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="enhed" use="required" type="enhedType"></xs:attribute>
+                </xs:extension>
+            </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="blomstType">
+        <xs:sequence maxOccurs="1" minOccurs="1">
+            <xs:element name="navn" type="navnType"/>
+            <xs:element name="højde" type="højdeType"/>
+            <xs:element name="stedsegrøn" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
