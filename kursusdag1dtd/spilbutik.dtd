@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT spilbutik (spil*)>
+<!ELEMENT spil (pris,navn, beskrivelse, score, platform)>
+<!ELEMENT navn (#PCDATA)>
+<!ELEMENT pris (#PCDATA)>
+<!ELEMENT beskrivelse (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
+<!ELEMENT platform (#PCDATA)>
+<!ATTLIST pris valuta (pund|lire|dollar) #REQUIRED>
+<!ATTLIST pris medmoms CDATA #REQUIRED>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://mike/spilbutik"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns:butik="http://mike/spilbutik"
+    >
+    <complexType name="spilbutikType">
+        <sequence minOccurs="0" maxOccurs="unbounded">
+            <element name="spil" type="butik:spilType" />
+        </sequence>
+    </complexType>
+
+    <element name="spilbutik" type="butik:spilbutikType"/>
+
+    <simpleType name="tekstmedbeg">
+        <restriction base="xs:string">
+            <minLength value="4"></minLength>
+            <maxLength value="30"></maxLength>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="talmedbegr">
+        <restriction base="xs:decimal">
+            <minInclusive value="10"></minInclusive>
+            <maxInclusive value="200"></maxInclusive>
+        </restriction>
+    </simpleType>
+
+    <complexType name="prisType">
+        <simpleContent>
+            <extension base="xs:decimal">
+                <attribute name="valuta" use="required" type="xs:string"></attribute>
+                <attribute name="medmoms" use="required" type="xs:boolean"></attribute>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+    <complexType name="spilType">
+        <sequence minOccurs="1" maxOccurs="1">
+            <element name="navn" type="xs:string"/>
+            <element name="beskrivelse" type="xs:string" minOccurs="0"></element>
+            <element name="score" type="xs:integer"></element>
+            <element name="platform" type="butik:platformType"></element>
+            <element name="pris" type="butik:prisType"></element>
+        </sequence>
+    </complexType>
+
+    <simpleType name="platformType">
+        <restriction base="xs:string">
+            <enumeration value="ps4"></enumeration>
+            <enumeration value="commodore64"></enumeration>
+            <enumeration value="vedikke"></enumeration>
+            <enumeration value=""></enumeration>
+        </restriction>
+    </simpleType>
+</schema>

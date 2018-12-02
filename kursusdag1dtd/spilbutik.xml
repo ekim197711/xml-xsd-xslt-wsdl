@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE spilbutik SYSTEM "spilbutik.dtd">
+<spilbutik>
+    <spil>
+        <pris valuta="pund" medmoms="true">123.3</pris>
+        <navn>Pacman</navn>
+        <beskrivelse>test 123</beskrivelse>
+        <score>4</score>
+        <platform>commodore64</platform>
+    </spil>
+    <spil>
+        <pris valuta="lire" medmoms="true">123.3</pris>
+        <navn>WOW</navn>
+        <beskrivelse>World of Warcraft 123</beskrivelse>
+        <score>4</score>
+        <platform>commodore64</platform>
+    </spil>
+</spilbutik>

@@ -1,0 +1,49 @@
+<definitions name="GoddagService"
+             targetNamespace="http://www.mineeksempler.com/wsdl/GoddagService.wsdl"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://www.mineeksempler.com/wsdl/GoddagService.wsdl"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <message name="SigGoddagRequest">
+        <part name="fornavn" type="xsd:string"/>
+    </message>
+
+    <message name="SigGoddagResponse">
+        <part name="hilsen" type="xsd:string"/>
+    </message>
+
+    <portType name="Goddag_PortType">
+        <operation name="sigGoddag">
+            <input message="tns:SigGoddagRequest"/>
+            <output message="tns:SigGoddagResponse"/>
+        </operation>
+    </portType>
+    <binding name="Goddag_Binding" type="tns:Goddag_PortType">
+        <soap:binding style="rpc"
+                      transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="sigGoddag">
+            <soap:operation soapAction="sigGoddag"/>
+            <input>
+                <soap:body
+                        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                        namespace="urn:mineeksempler:goddagservice"
+                        use="encoded"/>
+            </input>
+            <output>
+                <soap:body
+                        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                        namespace="urn:mineeksempler:goddagservice"
+                        use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="Goddag_Service">
+        <documentation>WSDL File for GoddagService</documentation>
+        <port binding="tns:Goddag_Binding" name="Goddag_Port">
+            <soap:address location="http://www.mineeksempler.com/SigGoddag/"/>
+        </port>
+    </service>
+</definitions>
+
+

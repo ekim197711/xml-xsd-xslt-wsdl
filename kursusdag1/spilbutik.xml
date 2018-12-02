@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" version="2.0" href="spilbutiktransform.xsl"?>
+<butik:spilbutik
+xmlns:xi="http://www.w3.org/2001/XMLSchema-instance"
+xi:schemaLocation="http://mike/spilbutik spilbutikKontrakt.xsd"
+xmlns:butik="http://mike/spilbutik"
+>
+    <butik:spil>
+        <butik:navn>Pacman</butik:navn>
+        <butik:beskrivelse>test 123</butik:beskrivelse>
+        <butik:score>4</butik:score>
+        <butik:platform>commodore64</butik:platform>
+        <butik:pris valuta="dkk" medmoms="true">123.3</butik:pris>
+    </butik:spil>
+
+    <butik:spil>
+        <butik:navn>Pacman</butik:navn>
+        <butik:score>4</butik:score>
+        <butik:platform>vedikke</butik:platform>
+        <butik:pris valuta="euro" medmoms="false">12322.3</butik:pris>
+    </butik:spil>
+</butik:spilbutik>
