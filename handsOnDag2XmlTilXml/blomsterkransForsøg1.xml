@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet
+        type="text/xsl"
+        href="/home/kursus/IdeaProjects/kursusxml/handsOnDag2XmlTilXml/blomsterkrans2TransformForsøg1.xsl"
+        version="1.0" ?>
+
+<blomsterkrans>
+    <blomst>
+        <navn>Solsikke</navn>
+        <duftscore>1</duftscore>
+        <placering>I haven i solen</placering>
+        <insekt>
+            <art sprog="dansk">mariehøne</art>
+            <symbiotisk>true</symbiotisk>
+            <farve>rød</farve>
+        </insekt>
+        <insekt>
+            <art sprog="latinsk">hornbille</art>
+            <symbiotisk>true</symbiotisk>
+            <farve>sort</farve>
+        </insekt>
+        <insekt>
+            <art sprog="engelsk">larve</art>
+            <symbiotisk>true</symbiotisk>
+            <farve>grøn</farve>
+        </insekt>
+    </blomst>
+    <blomst>
+        <navn>Rose</navn>
+        <duftscore>7</duftscore>
+        <placering>I solen ved grillen</placering>
+        <insekt>
+            <art sprog="engelsk">ørntvist</art>
+            <symbiotisk>true</symbiotisk>
+            <farve>sort</farve>
+        </insekt>
+        <insekt>
+            <art sprog="engelsk">myre</art>
+            <symbiotisk>false</symbiotisk>
+            <farve>grå</farve>
+        </insekt>
+        <insekt>
+            <art sprog="engelsk">tusindben</art>
+            <symbiotisk>true</symbiotisk>
+            <farve>sort</farve>
+        </insekt>
+    </blomst>
+    <blomst>
+        <navn>Karse</navn>
+        <duftscore>8</duftscore>
+        <placering>Indenfor i vat</placering>
+    </blomst>
+</blomsterkrans>

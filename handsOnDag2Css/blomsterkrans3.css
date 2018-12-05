@@ -1,0 +1,12 @@
+
+blomsterkrans {font-size:80%; margin:1.5em; font-family: Courier New; display:block}
+blomst {display:block; border: 1px solid silver;
+        margin:2.5em; padding:2.5em;
+        background-color:whitesmoke;}
+navn, duftscore {display:block}
+placering {}
+navn {color:red; text-decoration: bold; font-size: 24px;}
+duftscore {color:black;font-size: 20px;}
+placering {color:purple}
+insekt {display: block;border: 1px solid white; background-color:cyan;}
+art, farve, symbiotisk  {display: block;}

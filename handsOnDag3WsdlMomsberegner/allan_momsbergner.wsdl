@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions name="momsberegnerService"
+             targetNamespace="http://allan.dk/momsberegnerservice.wsdl"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://allan.dk/momsberegnerservice.wsdl"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+
+    <message name="mbRequest">
+        <part name="beloeb" type="xsd:decimal"/>
+    </message>
+
+    <message name="mbResponse">
+        <part name="medmoms" type="xsd:decimal"/>
+    </message>
+
+    <portType name="momsberegner_PortType">
+        <operation name="momsberegnerOperation">
+            <input message="tns:mbRequest"/>
+            <output message="tns:mbResponse"/>
+        </operation>
+    </portType>
+    <binding name="momsberegner_binding" type="tns:momsberegner_PortType">
+        <soap:binding style="rpc"
+                      transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="momsberegnerOperation">
+            <soap:operation soapAction="momsberegnerOperation"/>
+            <input>
+                <soap:body
+                        encodingStyle="http//schemas.xmlsoap.org/soap/encoding/"
+                        namespace="urn:mineeksempler:momsberegnerService"
+                        use="encoded"/>
+            </input>
+            <output>
+                <soap:body
+                        encodingStyle="http//schemas.xmlsoap.org/soap/encoding/"
+                        namespace="urn:mineeksempler:momsberegnerService"
+                        use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="momsberegnerService">
+        <documentation>WSDL File for momsberegnerservice</documentation>
+        <port binding="tns:momsberegner_binding" name="momsberegner_port">
+            <soap:address location="http://www.mineeksempler.com/momsberegner"/>
+        </port>
+    </service>
+</definitions>

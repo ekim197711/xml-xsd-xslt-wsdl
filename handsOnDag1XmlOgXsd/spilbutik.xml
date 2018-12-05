@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Dette spil er pacman og blev spillet i 80'ern. Generelt kan der være flere spil under spilbutik-->
+<sbk:spilbutik
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mike.dk/spilbutik.xsd ./spilbutikKontrakt.xsd"
+        xmlns:sbk="http://www.mike.dk/spilbutik.xsd">
+
+    <sbk:spil>
+        <sbk:navn>12345</sbk:navn>
+        <sbk:beskrivelse>mmni@protonmail.com</sbk:beskrivelse>
+        <sbk:pris medmoms="true">100</sbk:pris>
+        <sbk:sprog>engelsk</sbk:sprog>
+        <sbk:udgivelsesdato>1999-01-23</sbk:udgivelsesdato>
+    </sbk:spil>
+
+</sbk:spilbutik>

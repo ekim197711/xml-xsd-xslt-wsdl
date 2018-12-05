@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="momsberegner"
+        targetNamespace="http://www.mineeksempler.com/wsdl/momsberegner.wsdl"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:tns="http://www.mineeksempler.com/wsdl/momsberegner.wsdl"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:eksterne="http://mineeksempler/wsdltyper"
+>
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://mineeksempler/wsdltyper" schemaLocation="file:///home/kursus/IdeaProjects/kursusxml/handsOnDag3WsdlMomsberegner/momsberegner.xsd"/>
+        </schema>
+    </types>
+
+
+
+    <message name="MomsRequest">
+        <part name="beloeb" type="eksterne:beloebType"/>
+    </message>
+
+    <message name="MomsResponse">
+        <part name="medmoms" type="xs:decimal"/>
+    </message>
+
+    <portType name="MomsBeregner_PortType">
+        <operation name="beregnMoms">
+            <input message="tns:MomsRequest"/>
+            <output message="tns:MomsReqsponse"/>
+        </operation>
+    </portType>
+
+    <binding name="Moms_Binding" type="tns:MomsBeregner_PortType">
+        <soap:binding style="rpc"
+                      transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="beregnMoms">
+            <soap:operation soapAction="beregnMoms"/>
+            <input>
+                <soap:body
+                        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                        namespace="urn:mineeksempler:momsberegnerService"
+                        use="encoded"/>
+            </input>
+            <output>
+                <soap:body
+                        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                        namespace="urn:mineeksempler:momsberegnerService"
+                        use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="Momsberegner_Service">
+        <documentation>WSDL File til Momsberegner</documentation>
+        <port binding="tns:Moms_Binding" name="Moms_Port">
+            <soap:address location="http://www.mineeksempler.com/momsbergner/"/>
+        </port>
+    </service>
+</definitions>

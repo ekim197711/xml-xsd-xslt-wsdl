@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="file:///home/kursus/IdeaProjects/kursusxml/handsOnDag2XslOgXPath/blomsterkransTransform.xsl"
+        version="2.0" ?>
+
+<bb:blomsterkrans
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://minblomsterkrans ./blomsterkrans.xsd"
+        xmlns:bb="http://minblomsterkrans"
+>
+    <bb:blomst>
+        <bb:navn>Solsikke</bb:navn>
+        <bb:duftscore>1</bb:duftscore>
+        <bb:placering>I haven i solen</bb:placering>
+    </bb:blomst>
+    <bb:blomst>
+        <bb:navn>Rose</bb:navn>
+        <bb:duftscore>7</bb:duftscore>
+        <bb:placering>I solen ved grillen</bb:placering>
+    </bb:blomst>
+    <bb:blomst>
+        <bb:navn>Karse</bb:navn>
+        <bb:duftscore>8</bb:duftscore>
+        <bb:placering>Indenfor i vat</bb:placering>
+    </bb:blomst>
+</bb:blomsterkrans>

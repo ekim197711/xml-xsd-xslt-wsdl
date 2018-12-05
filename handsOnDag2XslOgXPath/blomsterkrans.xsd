@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        attributeFormDefault="unqualified"
+        elementFormDefault="qualified"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://minblomsterkrans"
+        xmlns:bb="http://minblomsterkrans"
+>
+  <xs:element name="blomsterkrans" type="bb:blomsterkransType"/>
+  <xs:complexType name="blomstType">
+    <xs:sequence>
+      <xs:element name="navn">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Solsikke"/>
+            <xs:enumeration value="Rose"/>
+            <xs:enumeration value="Karse"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="duftscore">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="7"/>
+            <xs:enumeration value="8"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="placering">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="I haven i solen"/>
+            <xs:enumeration value="I solen ved grillen"/>
+            <xs:enumeration value="Indenfor i vat"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="blomsterkransType">
+    <xs:sequence>
+      <xs:element type="bb:blomstType" name="blomst" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE værktøjskasse SYSTEM "værktøjskasseDefinition.dtd">
+<værktøjskasse>
+    <værktøj>
+        <art sprog="dk">hammer</art>
+        <farver>
+            <farve>rød</farve>
+            <farve>blå</farve>
+            <farve>sort</farve>
+        </farver>
+        <støjniveau>14</støjniveau>
+    </værktøj>
+    <værktøj>
+        <art sprog="en">sav</art>
+        <farver>
+            <farve>rød</farve>
+            <farve>blå</farve>
+            <farve>sort</farve>
+        </farver>
+        <støjniveau enhed="decibel">5</støjniveau>
+    </værktøj>
+    <værktøj>
+        <art sprog="sw">skruetrækker</art>
+        <farver>
+            <farve>rød</farve>
+            <farve>blå</farve>
+            <farve>sort</farve>
+        </farver>
+        <støjniveau>0</støjniveau>
+    </værktøj>
+</værktøjskasse>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mineeksempler/wsdltyper">
+
+    <xs:complexType name="beloebType">
+        <xs:all>
+            <xs:element name="kr" type="xs:integer"/>
+            <xs:element name="øre" type="xs:integer"/>
+        </xs:all>
+    </xs:complexType>
+
+
+
+</xs:schema>

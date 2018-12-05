@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.mike.dk/spilbutik.xsd"
+        xmlns:msb="http://www.mike.dk/spilbutik.xsd"
+        elementFormDefault="qualified"
+        attributeFormDefault="unqualified"
+>
+
+    <xs:element name="spilbutik" type="msb:spilbutikType"></xs:element>
+
+    <xs:complexType name="spilbutikType">
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="spil" type="msb:spilType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="sprogType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="spansk"/>
+            <xs:enumeration value="hollandsk"/>
+            <xs:enumeration value="dansk"/>
+            <xs:enumeration value="svensk"/>
+            <xs:enumeration value="tysk"/>
+            <xs:enumeration value="engelsk"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Atributter på pris START -->
+    <xs:complexType name="prisMedValutaType">
+        <xs:simpleContent>
+            <xs:extension base="msb:prisMedRestrikType">
+                <xs:attribute name="medmoms" use="required" type="xs:boolean"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <!-- Atributter på pris SLUT -->
+
+    <xs:simpleType name="prisMedRestrikType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="20"/>
+            <xs:maxExclusive value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="navnType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="4"/>
+            <xs:maxLength value="20"/>
+            <xs:pattern value="[0-9]*"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="datoType">
+        <xs:restriction base="xs:date">
+            <xs:minInclusive value="1920-01-01"/>
+            <xs:maxInclusive value="2000-12-31"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="spilType">
+        <xs:all>
+            <xs:element name="navn" type="msb:navnType"></xs:element>
+            <xs:element name="sprog" type="msb:sprogType"></xs:element>
+            <xs:element name="udgivelsesdato" type="msb:datoType"></xs:element>
+            <xs:element name="beskrivelse" type="xs:string"></xs:element>
+            <xs:element name="pris" type="msb:prisMedValutaType"></xs:element>
+        </xs:all>
+    </xs:complexType>
+
+
+</xs:schema>

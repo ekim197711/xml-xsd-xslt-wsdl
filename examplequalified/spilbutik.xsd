@@ -4,13 +4,12 @@
         elementFormDefault="qualified"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://mynamespace"
-        xmlns="http://mynamespace">
-
-    <xs:element name="spilbutik" type="spilbutikType"/>
+        xmlns:mns="http://mynamespace">
+    <xs:element name="spilbutik" type="mns:spilbutikType"/>
 
   <xs:complexType name="spilbutikType">
     <xs:sequence maxOccurs="unbounded">
-      <xs:element name="spil" type="spilType"/>
+      <xs:element name="spil" type="mns:spilType"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -33,7 +32,7 @@
       <xs:element name="navn">
           <xs:complexType>
               <xs:simpleContent>
-                  <xs:extension base="RestrictedNavn">
+                  <xs:extension base="mns:RestrictedNavn">
                       <xs:attribute name="forkortelse"
                                     type="xs:string"
                                     use="required" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT værktøjskasse (værktøj+)>
+<!ELEMENT værktøj (støjniveau, art, farver)>
+
+<!ELEMENT støjniveau (#PCDATA)>
+<!ATTLIST støjniveau enhed CDATA "decibel">
+
+<!ELEMENT art (#PCDATA)>
+<!ATTLIST art sprog (en|dk|sw|de) #REQUIRED>
+<!ELEMENT farver (farve*)>
+<!ELEMENT farve (#PCDATA)>
+
+
