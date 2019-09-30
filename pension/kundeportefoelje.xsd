@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://mike.com"
+    xmlns:mmn="http://mike.com"
+>
+
+    <simpleType name="kundeTyperestric" >
+        <restriction xml:base="string">
+            <enumeration value="TEST1"/>
+            <enumeration value="TEST2"/>
+            <enumeration value="TEST3"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="kundeType">
+        <simpleContent>
+            <extension base="mmn:kundeTyperestric">
+                <attribute name="geo"></attribute>
+            </extension>
+        </simpleContent>
+
+    </complexType>
+
+    <element name="kundeportefoelje">
+        <complexType>
+            <all>
+                <element name="kunde" type="mmn:kundeType">
+                </element>
+                <element name="portefoelje"></element>
+            </all>
+        </complexType>
+    </element>
+
+
+</schema>
