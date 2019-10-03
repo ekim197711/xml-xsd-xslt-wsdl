@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<kundeportefoelje>
+    <kunde>
+        <navn>Mike</navn>
+        <cpr>1234</cpr>
+    </kunde>
+    <portefoelje>
+        <aktie>
+            <navn sprog="dk">En stor bank</navn>
+            <antal>100</antal>
+            <værdi valuta="euro">200</værdi>
+        </aktie>
+        <ejendom>
+            <matrikelnr>A213</matrikelnr>
+            <værdi>1500000</værdi>
+        </ejendom>
+    </portefoelje>
+</kundeportefoelje>

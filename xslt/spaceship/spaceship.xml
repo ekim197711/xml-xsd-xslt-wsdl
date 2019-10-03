@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet
+        type="text/xsl"
+        href="spaceship.xslt"
+        version="1.0" ?>
+
+<spaceship xmlns="http://spaceship">
+    <cargospace>
+        <cargo amount="100">gold bars</cargo>
+        <cargo amount="123">alien slime</cargo>
+        <cargo amount="200">fusion reactor</cargo>
+        <cargo amount="300">Rare euforic flower</cargo>
+    </cargospace>
+</spaceship>
