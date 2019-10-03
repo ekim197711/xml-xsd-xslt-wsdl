@@ -9,14 +9,15 @@
     <body>
         This is styled xml.<br/>
             <br/>
-        <table>
-            <tr>
+        <table border="1">
+
                 <xsl:for-each select="spil">
+                    <tr>
                     <td><xsl:value-of select="navn"/></td>
                     <td><xsl:value-of select="score"/></td>
-
+                    </tr>
                 </xsl:for-each>
-            </tr>
+
         </table>
     </body>
 </html>

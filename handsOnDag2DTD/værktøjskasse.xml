@@ -2,30 +2,30 @@
 <!DOCTYPE værktøjskasse SYSTEM "værktøjskasseDefinition.dtd">
 <værktøjskasse>
     <værktøj>
-        <art sprog="dk">hammer</art>
+        <støjniveau>14</støjniveau>
+        <art sprog="de">hammer</art>
         <farver>
             <farve>rød</farve>
             <farve>blå</farve>
             <farve>sort</farve>
         </farver>
-        <støjniveau>14</støjniveau>
     </værktøj>
     <værktøj>
+        <støjniveau enhed="decibel">5</støjniveau>
         <art sprog="en">sav</art>
         <farver>
             <farve>rød</farve>
             <farve>blå</farve>
             <farve>sort</farve>
         </farver>
-        <støjniveau enhed="decibel">5</støjniveau>
     </værktøj>
     <værktøj>
+        <støjniveau>0</støjniveau>
         <art sprog="sw">skruetrækker</art>
         <farver>
             <farve>rød</farve>
             <farve>blå</farve>
             <farve>sort</farve>
         </farver>
-        <støjniveau>0</støjniveau>
     </værktøj>
 </værktøjskasse>

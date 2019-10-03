@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<spilbutik>
+    <stamdata>
+        <valutaKurser>
+            <kurs>
+                <valuta>sek</valuta>
+                <værdi>0.8</værdi>
+            </kurs>
+        </valutaKurser>
+        <nationalitetList>
+            <nationalitet>
+                <id>30</id>
+                <valuta>dkk</valuta>
+                <kundenationalitet>dansk</kundenationalitet>
+            </nationalitet>
+            <nationalitet>
+                <id>40</id>
+                <valuta>dkk</valuta>
+                <kundenationalitet>dansk</kundenationalitet>
+            </nationalitet>
+            <nationalitet>
+                <id>50</id>
+                <valuta>dkk</valuta>
+                <kundenationalitet>dansk</kundenationalitet>
+            </nationalitet>
+        </nationalitetList>
+    </stamdata>
+    <spil>
+        <navn>Fortnite</navn>
+        <udgivelsesår>2016</udgivelsesår>
+        <reviewscore anmelder="Mike">9</reviewscore>
+        <vejledendeudsalgspris>
+            <landespecifik>
+                <pris>200</pris>
+                <valuta>dkk</valuta>
+                <kundenationalitet>dansk</kundenationalitet>
+            </landespecifik>
+            <landespecifik>
+                <pris>26</pris>
+                <valuta>dkk</valuta>
+                <kundenationalitet>dansk</kundenationalitet>
+            </landespecifik>
+            <landespecifik>
+                <pris>250</pris>
+                <valuta>dkk</valuta>
+                <kundenationalitet>dansk</kundenationalitet>
+            </landespecifik>
+        </vejledendeudsalgspris>
+
+        <review>
+            <maxscore>10</maxscore>
+            <anmelder>
+                <navn>Mike</navn>
+                <alder>41</alder>
+                <humør>lalleglad</humør>
+            </anmelder>
+            <scoreværdi>9</scoreværdi>
+        </review>
+
+        <review>
+            <maxscore>5</maxscore>
+            <anmelder>
+                <navn>Susanne</navn>
+                <alder>55</alder>
+                <humør>mellem-glad</humør>
+            </anmelder>
+            <scoreværdi>3</scoreværdi>
+        </review>
+    </spil>
+
+</spilbutik>
+

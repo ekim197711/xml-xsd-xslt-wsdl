@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://blomst2"
+        xmlns:tns="http://blomst2"
+        attributeFormDefault="qualified"
+>
+    <xsd:element name="blomsterbutik" type="tns:blomsterbutikType"/>
+
+    <xsd:complexType name="blomstType">
+        <xsd:all>
+            <xsd:element name="navn" type="xsd:string"></xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+
+    <xsd:complexType name="blomsterbutikType">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="blomst" type="tns:blomstType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

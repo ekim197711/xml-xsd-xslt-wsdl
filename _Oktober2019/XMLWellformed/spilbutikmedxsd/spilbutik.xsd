@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mikesspilbutik"
+        xmlns:bk="http://mikesspilbutik"
+        xmlns:st="http://mikesspilbutik/spiltype"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified"
+>
+    <xs:import namespace="http://mikesspilbutik/spiltype" schemaLocation="./spil/spiltype.xsd"/>
+
+    <xs:element name="spilbutik" type="bk:spilbutikType"/>
+
+    <xs:simpleType name="atpDato">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}[/][0-9]{2}[/][0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="spilbutikType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="spil" type="st:spilType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

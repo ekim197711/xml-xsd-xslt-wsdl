@@ -8,7 +8,7 @@
         attributeFormDefault="unqualified"
 >
 
-    <xs:element name="spilbutik" type="msb:spilbutikType"></xs:element>
+    <xs:element name="spilbutik" type="msb:spilbutikType"/>
 
     <xs:complexType name="spilbutikType">
         <xs:sequence minOccurs="1" maxOccurs="unbounded">

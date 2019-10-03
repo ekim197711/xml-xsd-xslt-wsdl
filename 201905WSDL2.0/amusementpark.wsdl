@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:description
+        targetNamespace="http://parkservices"
+        xmlns:ps="http://parkservices"
+        xmlns:wsdl="http://www.w3.org/ns/wsdl"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pt="http://park"
+        xsi:schemaLocation="http://www.w3.org/ns/wsdl http://www.w3.org/2007/06/wsdl/wsdl20.xsd
+            http://park parktypes.xsd
+">
+
+    <wsdl:types>
+        <xs:import schemaLocation="parktypes.xsd"
+                   namespace="http://park" />
+    </wsdl:types>
+
+    <wsdl:interface name="AmusementPark">
+        <wsdl:operation name="ridesLeftOperation"
+                        pattern="http://www.w3.org/ns/wsdl/in-out">
+            <wsdl:input element="pt:parkguest"/>
+            <wsdl:output element="pt:ridesLeft"/>
+        </wsdl:operation>
+    </wsdl:interface>
+
+    <wsdl:binding name="AmusementParkBinding" type="http://www.w3.org/ns/wsdl/soap" >
+    </wsdl:binding>
+</wsdl:description>

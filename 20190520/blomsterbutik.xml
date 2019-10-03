@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="./blomsterbutik.xsl"
+        version="2.0" ?>
+<tns:blomsterbutik
+        xsi:schemaLocation="http://blomst2 blomsterbutik.xsd"
+        xmlns:tns="http://blomst2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+>
+    <blomst>
+        <navn>Viol</navn>
+    </blomst>
+    <blomst>
+        <navn>Rose</navn>
+    </blomst>
+    <blomst>
+        <navn>Tusindfryd</navn>
+    </blomst>
+</tns:blomsterbutik>

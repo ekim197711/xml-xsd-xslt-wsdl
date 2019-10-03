@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mikesspilbutik/spiltype"
+        xmlns:bk="http://mikesspilbutik/spiltype"
+        elementFormDefault="unqualified"
+        attributeFormDefault="unqualified"
+>
+    <complexType name="spillisteType">
+        <sequence minOccurs="0" maxOccurs="unbounded">
+            <element name="spil" type="bk:spilType"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="valutakodeRestricted">
+        <restriction base="string">
+            <minLength value="2"/>
+            <maxLength value="4"/>
+            <pattern value="[A-Z]*"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="valutakodeEnumeration">
+        <restriction base="string">
+            <enumeration value="DKK"/>
+            <enumeration value="EUR"/>
+            <enumeration value="GBP"/>
+            <enumeration value="SEK"/>
+            <enumeration value="NOK"/>
+            <enumeration value="USD"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="prisType">
+        <simpleContent>
+            <extension base="bk:prisTypeMedRestriktioner">
+                <attribute name="valuta" use="required" type="bk:valutakodeRestricted"/>
+                <attribute name="medmoms" use="required" type="boolean"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+
+    <simpleType name="scoreType">
+        <restriction base="int">
+            <minInclusive value="0"/>
+            <maxInclusive value="5"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="navnType">
+        <restriction base="string">
+            <whiteSpace value="preserve"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="spilType">
+        <all>
+            <element name="navn" type="string"/>
+            <element name="lager" type="int"/>
+            <element name="score" type="bk:scoreType"/>
+            <!-- Her kommer prisen -->
+            <element name="pris" type="bk:prisType"/>
+            <element name="udgivelsesdato" type="date"/>
+        </all>
+    </complexType>
+
+    <simpleType name="prisTypeMedRestriktioner">
+        <restriction base="decimal">
+            <minInclusive value="100"/>
+            <maxInclusive value="10000"/>
+        </restriction>
+    </simpleType>
+
+</schema>

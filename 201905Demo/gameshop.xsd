@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://gameshop"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xmlns="http://gameshop"
+>
+
+
+    <xs:simpleType name="currencyOption">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dkk"/>
+            <xs:enumeration value="euro"/>
+            <xs:enumeration value="usd"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="priceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="currency" type="currencyOption"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="reviewersType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="reviewer" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="gameType">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="rating" type="xs:int"/>
+            <xs:element name="price" type="priceType"/>
+            <xs:element name="reviewers" type="reviewersType"/>
+
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="gameshopType">
+        <xs:sequence>
+            <xs:element name="game" type="gameType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="gameshop" type="gameshopType"/>
+
+
+
+</xs:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<butik:spilbutik
+    xmlns:butik="http://mikesspilbutik"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://mikesspilbutik ./spilbutik.xsd"
+>
+            <spil>
+                <navn>Pacman</navn>
+                <lager>12</lager>
+                <score>3</score>
+                <pris medmoms="false" valuta="EUR">100</pris>
+                <udgivelsesdato>1977-11-03</udgivelsesdato>
+            </spil>
+            <spil>
+                <navn>Asteroid</navn>
+                <lager>12</lager>
+                <score>4</score>
+                <pris medmoms="true" valuta="DKK">2345.22</pris>
+                <udgivelsesdato>1979-01-03</udgivelsesdato>
+            </spil>
+            <spil>
+                <navn>Pong</navn>
+                <lager>45</lager>
+                <score>3</score>
+                <pris medmoms="true" valuta="NOK">1000</pris>
+                <udgivelsesdato>1984-04-13</udgivelsesdato>
+            </spil>
+</butik:spilbutik>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet
+        type="text/xsl"
+        href="./gameshop.xsl"
+        version="1.0" ?>
+<gameshop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gameshop ./gameshop.xsd"
+    xmlns:mn="http://gameshop"
+    xmlns="http://gameshop"
+>
+    <game>
+        <name>PacMan</name>
+        <rating>2</rating>
+        <price currency="euro">123.2</price>
+        <reviewers>
+            <reviewer>Søren</reviewer>
+            <reviewer>Ole</reviewer>
+            <reviewer>Bent</reviewer>
+        </reviewers>
+    </game>
+</gameshop>
