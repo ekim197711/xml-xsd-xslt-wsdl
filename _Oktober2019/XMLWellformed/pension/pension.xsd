@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mike/pension/2019/10/03"
+        xmlns:pn="http://mike/pension/2019/10/03"
+        xmlns:ae="http://mike/pension/aktier/2019/10/03"
+        xmlns:ke="http://mike/pension/kunde/2019/10/03"
+        xmlns:on="http://mike/pension/obligation/2019/10/03"
+>
+    <import schemaLocation="./types/aktie.xsd" namespace="http://mike/pension/aktier/2019/10/03"/>
+    <import schemaLocation="./types/kunde.xsd" namespace="http://mike/pension/kunde/2019/10/03"/>
+    <import schemaLocation="./types/obligation.xsd" namespace="http://mike/pension/obligation/2019/10/03"/>
+
+    <element name="pension" type="pn:pensionType"/>
+
+    <complexType name="pensionType">
+        <all>
+            <element name="kunde" type="ke:kundeType"/>
+            <element name="aktier" type="ae:aktierType"/>
+            <element name="obligationer" type="on:obligationerType"/>
+        </all>
+    </complexType>
+</schema>

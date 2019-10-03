@@ -2,8 +2,8 @@
 <!DOCTYPE værktøjskasse SYSTEM "værktøjskasseDefinition.dtd">
 <værktøjskasse>
     <værktøj>
-        <støjniveau>14</støjniveau>
-        <art sprog="de">hammer</art>
+        <støjniveau enhed="kanonslag">14</støjniveau>
+        <art sprog="dk">hammer</art>
         <farver>
             <farve>rød</farve>
             <farve>blå</farve>

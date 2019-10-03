@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://blomst"
+        xmlns:blomst="http://blomst"
+        elementFormDefault="unqualified"
+        >
+    <element name="blomsterkrans">
+        <complexType>
+            <sequence maxOccurs="unbounded">
+                <element name="blomst">
+                    <complexType>
+                        <all>
+                            <element name="navn" type="string"/>
+                            <element name="duft" type="string"/>
+                            <element name="farve" type="string"/>
+                        </all>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>

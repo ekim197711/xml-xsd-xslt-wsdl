@@ -1,60 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pension>
+<pen:pension
+        xmlns:pen="http://mike/pension/2019/10/03"
+        xmlns:xi="http://www.w3.org/2001/XMLSchema-instance"
+        xi:schemaLocation="http://mike/pension/2019/10/03 ./pension.xsd"
+>
     <kunde>
         <navn>Mike</navn>
-        <totalformue valuta="bitcoins">300</totalformue>
-        <vipstatus>3</vipstatus>
+        <adresse>asldadsf</adresse>
+        <vip>true</vip>
+        <totalformue>300</totalformue>
     </kunde>
-
     <aktier>
-        <portefølje>
+        <land>Danmark</land>
+        <aktieListe>
             <aktie>
-                <børsnr>dsafasdf124</børsnr>
                 <navn>Pandora</navn>
-                <antal>1200</antal>
-                <købskurs valuta="dkk">100</købskurs>
-                <dagskurs valuta="dkk">200</dagskurs>
-                <købsdato format="yyyy-MM-dd">2015-03-30</købsdato>
+                <antal>123</antal>
+                <købskurs>100</købskurs>
+                <dagskurs>123</dagskurs>
             </aktie>
             <aktie>
-                <børsnr>aasdfds12354</børsnr>
                 <navn>Mærsk</navn>
                 <antal>120</antal>
-                <købskurs valuta="dkk">5123</købskurs>
-                <dagskurs valuta="dkk">5124</dagskurs>
-                <købsdato>2017-08-21</købsdato>
+                <købskurs>5123</købskurs>
+                <dagskurs>5124</dagskurs>
             </aktie>
-        </portefølje>
-        <historiskehandler>
-            <aktie>
-                <børsnr>aasdfds12354</børsnr>
-                <navn>Mærsk</navn>
-                <antal>120</antal>
-                <købskurs valuta="dkk">5123</købskurs>
-                <salgskurs valuta="dkk">5224</salgskurs>
-                <købsdato>2017-08-21</købsdato>
-                <salgsdato>2019-08-10</salgsdato>
-            </aktie>
-        </historiskehandler>
+        </aktieListe>
     </aktier>
     <obligationer>
         <obligation>
             <navn>0.0% 30 årigt</navn>
-            <kurs>96</kurs>
-            <kursdato>2019-10-01</kursdato>
+            <købskurs>96</købskurs>
             <antal>100</antal>
         </obligation>
         <obligation>
             <navn>0.5% 30 årigt</navn>
-            <kurs>99</kurs>
-            <kursdato>2019-10-01</kursdato>
+            <købskurs>99</købskurs>
             <antal>200</antal>
         </obligation>
-        <obligation>
-            <navn>-0.5% 30 årigt</navn>
-            <kurs>94</kurs>
-            <kursdato>2019-10-01</kursdato>
-            <antal>350</antal>
-        </obligation>
     </obligationer>
-</pension>
+</pen:pension>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mike/pension/obligation/2019/10/03"
+        xmlns:on="http://mike/pension/obligation/2019/10/03"
+        xmlns:vt="http://mike/pension/værdityper/2019/10/03"
+>
+    <import schemaLocation="./værdipapirTyper.xsd"
+            namespace="http://mike/pension/værdityper/2019/10/03"/>
+
+    <complexType name="obligationType">
+        <all>
+            <element name="navn" type="string"/>
+            <element name="købskurs" type="vt:kursType"/>
+            <element name="antal" type="int"/>
+        </all>
+    </complexType>
+
+    <complexType name="obligationerType">
+        <sequence minOccurs="0" maxOccurs="unbounded">
+            <element name="obligation" type="on:obligationType"/>
+        </sequence>
+    </complexType>
+
+</schema>

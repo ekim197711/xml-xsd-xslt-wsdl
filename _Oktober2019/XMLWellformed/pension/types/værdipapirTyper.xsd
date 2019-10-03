@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mike/pension/værdityper/2019/10/03"
+>
+    <simpleType name="kursType">
+        <restriction>
+            <minInclusive value="10"/>
+            <maxInclusive value="20000"/>
+        </restriction>
+    </simpleType>
+</schema>

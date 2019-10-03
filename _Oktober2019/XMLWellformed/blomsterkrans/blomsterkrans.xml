@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl"
+        href="./blomsterkrans.xsl"
+        version="1.0" ?>
+
+<bt:blomsterkrans xmlns:bt="http://blomst" xmlns:xi="http://www.w3.org/2001/XMLSchema-instance"
+ xi:schemaLocation="http://blomst ./blomsterkrans.xsd">
+    <blomst>
+        <navn>Rose</navn>
+        <duft>3</duft>
+        <farve>Rød</farve>
+    </blomst>
+    <blomst>
+        <navn>Latyrus</navn>
+        <duft>2</duft>
+        <farve>Rødlig</farve>
+    </blomst>
+    <blomst>
+        <navn>Tidsel</navn>
+        <duft>1</duft>
+        <farve>Grøn</farve>
+    </blomst>
+    <blomst>
+        <navn>Margurit</navn>
+        <duft>1</duft>
+        <farve>Hvid</farve>
+    </blomst>
+    <blomst>
+        <navn>Mælkebøtte</navn>
+        <duft>4</duft>
+        <farve>Gul</farve>
+    </blomst>
+</bt:blomsterkrans>

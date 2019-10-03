@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mike/pension/kunde/2019/10/03"
+        xmlns:ke="http://mike/pension/kunde/2019/10/03"
+>
+
+    <complexType name="kundeType">
+        <sequence minOccurs="1" maxOccurs="1">
+            <element name="navn" type="string"/>
+            <element name="adresse" type="string"/>
+            <element name="vip" type="boolean"/>
+            <element name="totalformue" type="decimal"/>
+        </sequence>
+    </complexType>
+
+</schema>
