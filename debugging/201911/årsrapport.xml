@@ -1,0 +1,15 @@
+<?xml version= encodings="UTF-"?>
+
+<revisor>
+    <navn>Regnskabs Rikke</navn>
+    <resume>Firmaet har ikke på alle punkter levet op til sine
+        forpligtelser. Næste år forventes en vækst på > 2 % men < 6 %.
+        Udgifter til velgørende formål udgjorde < 2 % af overskuddet.
+    </resume>
+</revisor>
+
+<regnskab årstal=2019>
+    <omsætning>30 mio</omsætningen>
+    <overskud>1 mio<overskud>
+    <betalte skatter>17 mio</betalte skatter>
+</regnskabe>

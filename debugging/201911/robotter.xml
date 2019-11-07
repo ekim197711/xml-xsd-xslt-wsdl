@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robotter>
+    <robot færdigbygget="ja">
+        <navn>Robert</navn>
+        <vægt>100</vægt>
+        <højde>210</højde>
+    </robot>
+    <robot færdigbygget=">
+        <navn>Åse</navn>
+        <vægt>>80</vægt>
+        <højde>230</højde>
+    </robot>
+    <robot færdigbygget="nej">
+        <navn>Johan</navn>
+        <vægt>>30</vægt>
+        <højde>20</højde>
+    </robot>
+    <robot færdigbygget=ja>
+        <navn>Robertine</navn>
+        <vægt>>55
+        <højde>23</højde>
+        </vægt>
+    </robot>
+</robotter>
