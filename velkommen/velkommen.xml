@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml-kursus language="danish">
+    <velkomstbesked>Velkommen til XML Foundation</velkomstbesked>
+    <instruktør>Mike Møller Nielsen</instruktør>
+    <frokost>
+        Fra 12 til 13. Der er lune retter.
+        Vi har reserveret bord
+        - lokale 3 står der på en seddel på bordet.
+    </frokost>
+    <wifi>34664339</wifi>
+    <deltagere>
+        <deltager>Louise</deltager>
+        <deltager>Roy</deltager>
+        <deltager>Michael</deltager>
+        <deltager>Curt</deltager>
+        <deltager>John</deltager>
+        <deltager>Jens</deltager>
+        <deltager>Frederik</deltager>
+        <deltager>Jesper</deltager>
+        <deltager>Inge</deltager>
+    </deltagere>
+</xml-kursus>

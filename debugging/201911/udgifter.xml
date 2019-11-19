@@ -1,9 +1,9 @@
-<?xml version="1." encoding="UTF" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
-<udgifter årstal=2019>
+<udgifter årstal="2019">
     <udgift>
         <navn>morgenmad</navn>
-        <beløb>125
+        <beløb>125</beløb>
         <herafmoms>25</herafmoms>
     </udgift>
     <udgift>
@@ -1219,7 +1219,7 @@
     </udgift>
     <udgift land="dk">
         <navn>morgenmad</navn>
-        <beløb><125</beløb>
+        <beløb><![CDATA[<125]]></beløb>
         <herafmoms>25</herafmoms>
     </udgift>
     <udgift>
@@ -1257,7 +1257,7 @@
         <beløb>125</beløb>
         <herafmoms>25</herafmoms>
     </udgift>
-    <udgift land=dk>
+    <udgift land="dk">
         <navn>morgenmad</navn>
         <beløb>125</beløb>
         <herafmoms>25</herafmoms>
@@ -1824,10 +1824,8 @@
     </udgift>
     <udgift>
         <navn>morgenmad</navn>
-        <beløb>125
-        <herafmoms>25
-        </beløb>
-    </herafmoms>
+        <beløb>125</beløb>
+        <herafmoms>25</herafmoms>
     </udgift>
     <udgift>
         <navn>morgenmad</navn>
@@ -2200,7 +2198,7 @@
         <herafmoms>25</herafmoms>
     </udgift>
     <udgift>
-        <na vn>morgenmad</navn>
+        <navn>morgenmad</navn>
         <beløb>125</beløb>
         <herafmoms>25</herafmoms>
     </udgift>
@@ -2394,7 +2392,7 @@
         <beløb>125</beløb>
         <herafmoms>25</herafmoms>
     </udgift>
-    <udgift
+    <udgift>
         <navn>morgenmad</navn>
         <beløb>125</beløb>
         <herafmoms>25</herafmoms>

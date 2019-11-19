@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sb:spilbutikken
+        xmlns:sb="http://mikesbutik.dk"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://mikesbutik.dk spilbutikkontrakt.xsd"
+>
+    <sb:spil>
+        <sb:titel>Miss Pacman</sb:titel>
+        <sb:score>4</sb:score>
+        <!-- Jeg har rettet indholdet med CDATA så XML'en er wellformed -->
+        <sb:pris sb:valuta="dkk">140.5</sb:pris>
+    </sb:spil>
+    <sb:spil>
+        <sb:titel>Pacmanf dfsggffgfhghgh ghg dhg g hgh gh  ghgh d dgh</sb:titel>
+        <sb:score>-50</sb:score>
+        <sb:pris sb:valuta="euro">100.5</sb:pris>
+    </sb:spil>
+    <sb:spil>
+        <sb:titel>Space Invaders</sb:titel>
+        <sb:score>5</sb:score>
+        <sb:pris sb:valuta="sek">99.99</sb:pris>
+    </sb:spil>
+</sb:spilbutikken>

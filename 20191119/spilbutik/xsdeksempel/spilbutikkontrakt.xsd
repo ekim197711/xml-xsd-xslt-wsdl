@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://mikesbutik.dk"
+            xmlns:msb="http://mikesbutik.dk"
+            elementFormDefault="qualified"
+            attributeFormDefault="qualified"
+>
+    <xsd:element name="spilbutikken" type="msb:spilButikType"/>
+
+    <xsd:complexType name="spilButikType">
+        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="spil" type="msb:spilType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="spilType">
+        <xsd:all>
+            <xsd:element name="titel" type="xsd:string"/>
+            <xsd:element name="score" type="xsd:int"/>
+            <xsd:element name="pris" type="msb:prisType"/>
+        </xsd:all>
+    </xsd:complexType>
+
+    <xsd:complexType name="prisType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:decimal">
+                <xsd:attribute name="valuta" type="xsd:string"
+                               use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+</xsd:schema>

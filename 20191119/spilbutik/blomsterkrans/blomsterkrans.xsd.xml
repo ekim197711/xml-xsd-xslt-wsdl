@@ -1,0 +1,11 @@
+<blom:blomsterkrans
+        xmlns:blom="http://blomsterkrans.dk"
+        xmlns:xi="http://www.w3.org/2001/XMLSchema-instance"
+        xi:schemaLocation="http://blomsterkrans.dk
+        blomsterkrans.xsd"
+>
+  <blomst>Rose</blomst>
+  <blomst>Tulipan</blomst>
+  <blomst>Ukrudt</blomst>
+  <blomst>Solsikke</blomst>
+</blom:blomsterkrans>

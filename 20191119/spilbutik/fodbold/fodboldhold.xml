@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xml" href="fodboldhold.xslt"?>
+<fodboldhold>
+    <spiller>
+        <navn kælenavn="hurtigkarl">Allan Simonsen</navn>
+        <position>Forsvar</position>
+        <transfer>100</transfer>
+    </spiller>
+    <spiller>
+        <navn kælenavn="leren">Søren Lerby</navn>
+        <position>Midterbane</position>
+        <transfer>200</transfer>
+    </spiller>
+    <spiller>
+        <navn kælenavn="den kære">Elkjær</navn>
+        <position>Libero</position>
+        <transfer>300</transfer>
+    </spiller>
+</fodboldhold>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pensioner>
+    <pension>
+        <selskab>atp</selskab>
+        <kunde>
+            <navn>Mike</navn>
+            <adresse>
+                <vej>Hjallerup Alle</vej>
+                <by>Kastrup</by>
+            </adresse>
+            <vip>ja</vip>
+        </kunde>
+        <aktier>
+            <aktie>
+                <id>1</id>
+                <navn>Danske Bank</navn>
+                <købskurs valuta="dkk">123.23</købskurs>
+                <antal>100</antal>
+                <salgskurs valuta="dkk">130.21</salgskurs>
+            </aktie>
+            <aktie>
+                <id>12312235</id>
+                <navn>Mærsk</navn>
+                <købskurs valuta="dkk">123.23</købskurs>
+                <antal>100</antal>
+            </aktie>
+        </aktier>
+        <obligationer>
+            <obligation>
+                <navn>1% 30 år</navn>
+                <kurs>98.98</kurs>
+                <antal>200</antal>
+            </obligation>
+            <obligation>
+                <navn>0.5% 30 år</navn>
+                <kurs>94.98</kurs>
+                <antal>300</antal>
+            </obligation>
+        </obligationer>
+
+
+    </pension>
+    <pension>
+        <selskab>Velliv</selskab>
+        <kunde></kunde>
+        <aktier></aktier>
+        <obligationer/>
+    </pension>
+</pensioner>
