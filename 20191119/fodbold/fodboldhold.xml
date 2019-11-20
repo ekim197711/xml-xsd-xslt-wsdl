@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet type="text/xml" href="fodboldhold.xslt"?>
+<!--<!DOCTYPE fodboldhold SYSTEM "fodboldhold.dtd">-->
 <fodboldhold>
     <spiller>
         <navn kælenavn="hurtigkarl">Allan Simonsen</navn>
-        <position>Forsvar</position>
+        <position minattr="test1234">Forsvar</position>
         <transfer>100</transfer>
     </spiller>
     <spiller>
-        <navn kælenavn="leren">Søren Lerby</navn>
+        <navn>Søren Lerby</navn>
         <position>Midterbane</position>
         <transfer>200</transfer>
     </spiller>

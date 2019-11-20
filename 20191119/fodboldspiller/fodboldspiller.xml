@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<fod:fodboldspiller xmlns:fod="http://boldspiller.dk"
+xmlns:xi="http://www.w3.org/2001/XMLSchema-instance"
+xi:schemaLocation="http://boldspiller.dk fodboldspiller.xsd">
+    <navn>Nadia Nadim</navn>
+    <position>angriber</position>
+    <mål>2000</mål>
+</fod:fodboldspiller>

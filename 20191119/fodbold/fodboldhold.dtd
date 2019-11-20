@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT fodboldhold (spiller*)>
+<!ELEMENT spiller (navn, position, transfer)>
+<!ELEMENT navn (#PCDATA)>
+<!ATTLIST navn kælenavn #REQUIRED>
+<!ELEMENT position (#PCDATA)>
+<!ATTLIST position minattr>
+<!ELEMENT transfer (#PCDATA)>

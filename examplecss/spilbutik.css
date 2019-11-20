@@ -1,4 +1,4 @@
-spilbutik {font-size:80%; margin:0.5em; font-family: Verdana; display:block}
+spilbutik {font-size:2rem; margin:0.5em; font-family: Verdana; display:block}
 spil {display:block; border: 1px solid silver; margin:0.5em; padding:0.5em; background-color:whitesmoke;}
 navn, score, beskrivelse {display:block;}
 navn {color:red; text-decoration: underline}

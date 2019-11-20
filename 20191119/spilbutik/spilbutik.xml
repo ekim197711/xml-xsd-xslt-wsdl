@@ -8,7 +8,7 @@
         <sb:titel>Miss Pacman</sb:titel>
         <sb:score>4</sb:score>
         <!-- Jeg har rettet indholdet med CDATA så XML'en er wellformed -->
-        <sb:pris sb:valuta="dkk">140.5</sb:pris>
+        <sb:pris sb:valuta="dkk">14033.5</sb:pris>
     </sb:spil>
     <sb:spil>
         <sb:titel>Pacmanf dfsggffgfhghgh ghg dhg g hgh gh  ghgh d dgh</sb:titel>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computer>
+    <navn kælenavn="Fast And Furious">Super hurtig</navn>
+    <harddisk type="ssd">3 TB SSD</harddisk>
+    <!-- Min komentar bla bla bla -->
+    <cpu><![CDATA[3 GHz < 123 < 123]]></cpu>
+    <usbporte>7</usbporte>
+    <softwareListe>
+        <software>Ubuntu</software>
+        <software>Windows</software>
+        <software>MacOS</software>
+    </softwareListe>
+</computer>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://boldspiller.dk"
+           xmlns:bold="http://boldspiller.dk">
+    <xs:element name="fodboldspiller" type="bold:fodboldspillerType"/>
+    <xs:complexType name="fodboldspillerType">
+        <xs:all>
+            <xs:element name="navn" type="xs:string"/>
+            <xs:element name="position" type="bold:positionType"/>
+            <xs:element name="mål" type="bold:målType"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:simpleType name="positionType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="målType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="2000"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

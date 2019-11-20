@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc>
+    <name>Super hurtig</name>
+    <outputports>7</outputports>
+    <keyboard>ja ja da</keyboard>
+    <osList>
+        <os>Ubuntu</os>
+        <os>Windows</os>
+        <os>MacOS</os>
+    </osList>
+    <petname>Fast And Furious</petname>
+</pc>

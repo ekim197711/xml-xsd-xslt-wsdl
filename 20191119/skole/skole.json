@@ -1,0 +1,24 @@
+{
+  "lærere": [
+    {
+      "navn": "Susanne",
+      "alder": 35
+    },
+    {
+      "navn": "Bent",
+      "alder": 65
+    },
+    {
+      "navn": "Søren",
+      "alder": 85
+    }
+  ],
+  "navn": "Boesager",
+  "placering": "Smørum",
+  "klasselokaler": {
+    "blålokale": {
+      "legerum": true,
+      "kvm": 64
+    }
+  }
+}
