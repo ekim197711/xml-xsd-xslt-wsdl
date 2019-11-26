@@ -2,7 +2,7 @@
 <xsl:stylesheet
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://minblomsterkrans ./blomsterkrans.xsd"
+        xsi:schemaLocation="http://minblomsterkrans blomsterkrans.xsd"
         xmlns:bb="http://minblomsterkrans"
         exclude-result-prefixes="bb"
         version="2.0">

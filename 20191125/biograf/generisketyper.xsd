@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://mike.dk/generisk"
+>
+
+    <complexType name="prisType">
+        <simpleContent>
+            <extension base="decimal">
+                <attribute name="valuta" use="required" type="string"/>
+                <attribute name="indexregulering" use="required" type="decimal"/>
+                <attribute name="afrundet" use="required" type="boolean"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+
+</schema>

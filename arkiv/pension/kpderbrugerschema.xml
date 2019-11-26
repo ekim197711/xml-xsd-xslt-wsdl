@@ -2,7 +2,7 @@
 <mmn:kundeportefoelje
     xmlns:mmn="http://mike.com"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://mike.com ./kundeportefoelje.xsd">
+    xsi:schemaLocation="http://mike.com kundeportefoelje.xsd">
     <kunde >TEST2</kunde>
     <portefoelje></portefoelje>
 </mmn:kundeportefoelje>

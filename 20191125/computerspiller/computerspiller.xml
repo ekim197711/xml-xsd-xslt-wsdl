@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mcs:computerspiller
+        xmlns:mcs="http://intranet.mike.dk/itafdeling/computerspiller">
+    <fødselsår>1977</fødselsår>
+    <vægt>105.3</vægt>
+    <highscore>500000</highscore>
+    <navn>Mike</navn>
+    <spilhistorik>
+        <spil>
+            <titel sprog="dk" sværhedsgrad="3" land="dk">Pacman</titel>
+            <dato>2019-11-20</dato>
+            <score>32232</score>
+            <land>Amerika</land>
+        </spil>
+        <spil>
+            <titel sprog="eng" sværhedsgrad="3">Hitman</titel>
+            <dato>2019-11-21</dato>
+            <score>22232</score>
+            <land>Danmark</land>
+        </spil>
+    </spilhistorik>
+</mcs:computerspiller>

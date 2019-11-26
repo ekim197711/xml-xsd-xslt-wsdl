@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://mike.dk/afspilning"
+        xmlns:af="http://mike.dk/afspilning"
+        xmlns:gen="http://mike.dk/generisk"
+>
+    <import namespace="http://mike.dk/generisk" schemaLocation="generisketyper.xsd"/>
+
+    <complexType name="filmafspilningListeType">
+        <sequence minOccurs="0" maxOccurs="unbounded">
+            <element name="filmafspilning" type="af:filmafspilningType"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="filmafspilningType">
+        <all>
+            <element name="titel" type="string"/>
+            <element name="tilladt" type="string"/>
+            <element name="fireD" type="boolean"/>
+            <element name="pris" type="gen:prisType"/>
+        </all>
+    </complexType>
+
+
+</schema>

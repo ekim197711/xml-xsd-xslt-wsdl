@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bo:biograf
+        xmlns:bo="http://mike.dk/biograf"
+        xmlns:xi="http://www.w3.org/2001/XMLSchema-instance"
+        xi:schemaLocation="http://mike.dk/biograf ./biograf.xsd"
+ >
+    <navn>Fields Nordisk film</navn>
+    <popkornsmaskine>
+        <operatør>
+            <![CDATA[Tine-Mette  dfdfsa dsf@£@$@€£@€{{<]]>
+        </operatør>
+        <antal>131</antal>
+    </popkornsmaskine>
+    <filmafspilningListe>
+        <filmafspilning>
+            <titel>Terminator Dark Fate</titel>
+            <tilladt>o.15</tilladt>
+            <fireD>true</fireD>
+            <pris valuta="dkk" afrundet="false" indexregulering="1.05">130.5</pris>
+        </filmafspilning>
+        <filmafspilning>
+            <titel>Downtown Abbey</titel>
+            <tilladt>alle</tilladt>
+            <fireD>false</fireD>
+            <pris valuta="dkk" indexregulering="1.04" afrundet="true">120.5</pris>
+        </filmafspilning>
+    </filmafspilningListe>
+</bo:biograf>

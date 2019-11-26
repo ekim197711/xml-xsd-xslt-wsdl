@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://intranet.mike.dk/itafdeling/computerspiller"
+           xmlns:cs="http://intranet.mike.dk/itafdeling/computerspiller"
+    elementFormDefault="unqualified" attributeFormDefault="unqualified"
+>
+    <xs:element name="computerspiller" type="cs:computerspillerType"/>
+    <xs:complexType name="computerspillerType">
+        <xs:all>
+            <xs:element name="spilhistorik" type="cs:spilhistorikType"/>
+            <xs:element name="navn" type="cs:navnType"/>
+            <xs:element name="fødselsår" type="xs:integer"/>
+            <xs:element name="highscore" type="xs:integer"/>
+            <xs:element name="vægt" minOccurs="1" type="cs:vægtType"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:simpleType name="navnType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="vægtType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="300"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="spilhistorikType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="spil" type="cs:spilType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="spilType">
+        <xs:all>
+            <xs:element name="dato" type="xs:string"/>
+            <xs:element name="titel" type="cs:titelType"/>
+            <xs:element name="score" type="xs:integer"/>
+            <xs:element name="land" type="cs:landType"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="titelType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="sprog" use="required" type="xs:string"/>
+                <xs:attribute name="land" use="optional" type="xs:string"/>
+                <xs:attribute name="sværhedsgrad" use="required" type="xs:integer"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:simpleType name="landType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Sverige"/>
+            <xs:enumeration value="Danmark"/>
+            <xs:enumeration value="Amerika"/>
+            <xs:enumeration value="Tyskland"/>
+            <xs:enumeration value="Mexico"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

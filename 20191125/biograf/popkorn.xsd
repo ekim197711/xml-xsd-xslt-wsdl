@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mike.dk/popkornmaskine"
+        xmlns:ma="http://mike.dk/popkornmaskine">
+
+    <complexType name="popkornsmaskineType">
+        <all>
+            <element name="operatør" type="string"/>
+            <element name="antal" type="integer"/>
+        </all>
+    </complexType>
+
+</schema>

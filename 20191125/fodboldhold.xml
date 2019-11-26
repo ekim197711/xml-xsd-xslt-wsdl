@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<fodboldhold>
+    <træner></træner>
+    <holdbus>
+        <mærke>Volkswagen</mærke>
+        <farve>rød</farve>
+    </holdbus>
+    <!-- Min kommentar.. Her er en liste over kvindlige fodboldspillere...-->
+    <spillerlist>
+        <spiller>
+            <navn>Nadja</navn>
+            <position><![CDATA[< venstreback]]></position>
+            <fødselsårtal>1235</fødselsårtal>
+            <transferpris valute="dkk">1234</transferpris>
+            <mål>123</mål>
+        </spiller>
+        <spiller>
+            <navn>Mike</navn>
+            <position>Midtbanespiller</position>
+            <fødselsårtal>1234</fødselsårtal>
+            <transferpris valute="dkk">200</transferpris>
+            <mål>123</mål>
+        </spiller>
+        <spiller>
+            <navn>Søren</navn>
+            <position>Angreb</position>
+            <fødselsårtal>2000</fødselsårtal>
+            <transferpris valute="dkk">300</transferpris>
+            <mål>12</mål>
+        </spiller>
+    </spillerlist>
+    <presseeventliste>
+        <presseevent>
+            <dato>asdfsd123123</dato>
+            <agenda>dsfasdfsd</agenda>
+        </presseevent>
+    </presseeventliste>
+</fodboldhold>

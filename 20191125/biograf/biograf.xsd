@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://mike.dk/biograf"
+        xmlns:bio="http://mike.dk/biograf"
+        xmlns:pop="http://mike.dk/popkornmaskine"
+        xmlns:af="http://mike.dk/afspilning"
+
+>
+    <import namespace="http://mike.dk/popkornmaskine" schemaLocation="popkorn.xsd"/>
+    <import namespace="http://mike.dk/afspilning" schemaLocation="afspilning.xsd"/>
+    <element name="biograf" type="bio:biografType"/>
+
+    <complexType name="biografType">
+        <all>
+            <element name="navn" type="string"/>
+            <element name="popkornsmaskine" type="pop:popkornsmaskineType"/>
+            <element name="filmafspilningListe" type="af:filmafspilningListeType"/>
+        </all>
+    </complexType>
+</schema>
