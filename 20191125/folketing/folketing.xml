@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<folketing>
+    <formand>
+        <fornavn>Postmesteren</fornavn>
+        <efternavn>Claus</efternavn>
+    </formand>
+    <pladser>179</pladser>
+    <ferie>false</ferie>
+    <emner>
+        <emne>Folkeskole</emne>
+        <emne>Udenrigs</emne>
+        <emne>Økonomi</emne>
+        <emne>Sundhed</emne>
+    </emner>
+</folketing>
+
+

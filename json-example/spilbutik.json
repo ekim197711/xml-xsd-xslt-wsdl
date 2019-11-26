@@ -1,0 +1,23 @@
+{
+  "navn": "Mikes spilbutik",
+  "årstal": 2018,
+  "spil": [
+    "Pacman",
+    "Space Invaders"
+  ],
+  "medarbejder": [
+    {
+      "navn": "Mike",
+      "Stilling": "Floormanager"
+    },
+    {
+      "navn": "Susanne",
+      "Stilling": "Chef"
+    }
+  ],
+  "omsætning": null,
+  "størrelse": {
+    "enhed": "kvm",
+    "værdi": 1234
+  }
+}

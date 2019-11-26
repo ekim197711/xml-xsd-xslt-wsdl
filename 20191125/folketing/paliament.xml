@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parliament>
+    <chairman>
+        <firstname>Postmesteren</firstname>
+        <lastname>Claus</lastname>
+    </chairman>
+    <seats>179</seats>
+    <subjects>
+        <subject>Folkeskole</subject>
+        <subject>Udenrigs</subject>
+        <subject>Økonomi</subject>
+        <subject>Sundhed</subject>
+    </subjects>
+</parliament>
